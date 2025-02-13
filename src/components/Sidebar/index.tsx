@@ -35,7 +35,7 @@ const MenuOptions = (props: Props) => {
                     <Link
                       href={menuItem.href}
                       className={clsx(
-                        "group h-8 w-8 flex items-center justify-center  scale-[1.5] rounded-lg p-[3px]  cursor-pointer",
+                        "group h-5 w-5 flex items-center justify-center scale-[1.5] rounded-lg p-[2px]  cursor-pointer",
                         {
                           "dark:bg-[#2F006B] bg-[#EEE0FF] ":
                             pathName === menuItem.href,
@@ -59,25 +59,26 @@ const MenuOptions = (props: Props) => {
           ))}
         </TooltipProvider>
         <Separator />
-        <div className="flex items-center flex-col gap-9 dark:bg-[#353346]/30 py-4 px-2 rounded-full h-56 overflow-scroll border-[1px]">
+        <div className="flex items-center flex-col gap-8 dark:bg-[#353346]/30 py-2 px-2 rounded-full h-56 overflow-scroll border-[1px]">
           <div className="relative dark:bg-[#353346]/70 p-2 rounded-full dark:border-t-[2px] border-[1px] dark:border-t-[#353346]">
-            <LucideMousePointerClick className="dark:text-white" size={18} />
+            <LucideMousePointerClick className="dark:text-white" size={16} />
             <div className="border-l-2 border-muted-foreground/50 h-6 absolute left-1/2 transform translate-x-[-50%] -bottom-[30px]" />
           </div>
           <div className="relative dark:bg-[#353346]/70 p-2 rounded-full dark:border-t-[2px] border-[1px] dark:border-t-[#353346]">
-            <GitBranch className="text-muted-foreground" size={18} />
+            <GitBranch className="text-muted-foreground" size={16} />
             <div className="border-l-2 border-muted-foreground/50 h-6 absolute left-1/2 transform translate-x-[-50%] -bottom-[30px]"></div>
           </div>
           <div className="relative dark:bg-[#353346]/70 p-2 rounded-full dark:border-t-[2px] border-[1px] dark:border-t-[#353346]">
-            <Database className="text-muted-foreground" size={18} />
+            <Database className="text-muted-foreground" size={16} />
             <div className="border-l-2 border-muted-foreground/50 h-6 absolute left-1/2 transform translate-x-[-50%] -bottom-[30px]"></div>
           </div>
           <div className="relative dark:bg-[#353346]/70 p-2 rounded-full dark:border-t-[2px] border-[1px] dark:border-t-[#353346]">
-            <GitBranch className="text-muted-foreground" size={18} />
+            <GitBranch className="text-muted-foreground" size={16} />
           </div>
         </div>
       </div>
-      <div className="flex items-center justify-center flex-col gap-8">
+      <Separator />
+      <div className="flex items-center justify-center flex-col ">
         <ModeToggle />
       </div>
     </nav>
